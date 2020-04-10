@@ -24,21 +24,14 @@
 
         &:hover {
             cursor: pointer;
-        }
-
-        &:hover, &:active {
             background-color: $color-primary;
-
         }
     }
 
-    &__item:hover &__link {
+    &__item:hover &__link { 
         color: white;
     }
 
-    &__item:active &__link {
-        color: white;
-    }
 
     &__link {
         text-decoration: none;
@@ -47,5 +40,10 @@
         font-weight: 600;
         display: inline-block;
         width: 100%;
+
+        &:focus{
+            color:white;
+            background-color: $color-primary-dark;
+        }
     }
 }

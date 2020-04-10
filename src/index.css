@@ -156,12 +156,9 @@ body {
     .pagination__item:not(:last-child) {
       margin-right: 5px; }
     .pagination__item:hover {
-      cursor: pointer; }
-    .pagination__item:hover, .pagination__item:active {
+      cursor: pointer;
       background-color: #5681a6; }
   .pagination__item:hover .pagination__link {
-    color: white; }
-  .pagination__item:active .pagination__link {
     color: white; }
   .pagination__link {
     text-decoration: none;
@@ -170,6 +167,9 @@ body {
     font-weight: 600;
     display: inline-block;
     width: 100%; }
+    .pagination__link:focus {
+      color: white;
+      background-color: #466078; }
 
 .notification {
   height: 100vh;

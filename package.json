@@ -2,6 +2,7 @@
   "name": "react-library-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://markonikolic995.github.io/openLibrary/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -18,7 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "compile:sass": "node-sass src/sass/main.scss src/index.css -w"
+    "compile:sass": "node-sass src/sass/main.scss src/index.css -w",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
