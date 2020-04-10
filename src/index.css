@@ -1,0 +1,268 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+.form-box {
+  height: 25vh;
+  width: 100%;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, #8dbbe3, #466078);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  z-index: 2000; }
+  .form-box__heading {
+    margin-top: 30px;
+    font-weight: 500;
+    color: white;
+    font-style: italic;
+    font-size: 55px;
+    margin-bottom: 55px; }
+
+.form {
+  display: inline-block; }
+  .form__input {
+    margin-right: 10px;
+    width: 230px;
+    background-color: #8dbbe3;
+    border: 1px solid #5681a6;
+    color: #466078;
+    border-radius: 3px;
+    height: 33px;
+    text-align: center;
+    font-size: 18px; }
+    .form__input:focus {
+      outline: none;
+      border: 1px solid lightgrey; }
+  .form__btn {
+    font-size: 18px;
+    width: 70px;
+    height: 33px;
+    background-color: #466078;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #5681a6;
+    border-radius: 3px;
+    transition: all .1s; }
+    .form__btn:hover {
+      cursor: pointer;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-1px) scale(1.05); }
+    .form__btn:active {
+      transform: translateY(-3px); }
+
+.list-books {
+  margin-top: 25vh;
+  position: absolute;
+  z-index: -1;
+  height: 75vh;
+  width: 100%;
+  background-image: linear-gradient(to right bottom, rgba(141, 187, 227, 0.7), rgba(70, 96, 120, 0.7)), url("/img/background.jpeg");
+  background-size: cover;
+  position: fixed;
+  overflow-y: auto; }
+
+.card {
+  height: 500px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-align: center; }
+  .card__title-box {
+    height: 30%;
+    padding: 5% 4%;
+    position: relative;
+    text-align: center;
+    border-bottom: .5px solid white;
+    overflow-y: auto; }
+  .card__title {
+    color: #466078;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 95%; }
+  .card__author-box {
+    height: 25%;
+    border-bottom: .5px solid white;
+    padding: 5% 2%;
+    position: relative;
+    overflow-x: auto; }
+  .card__author {
+    color: #466078;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 95%; }
+  .card__year-box {
+    height: 20%;
+    position: relative;
+    text-align: center; }
+  .card__year {
+    font-weight: 500;
+    font-size: 22px;
+    width: 100%;
+    color: purple;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+  .card__btn {
+    width: 35%;
+    height: 8%;
+    font-size: 15px;
+    border: 1px solid #466078;
+    border-radius: 3px;
+    background-color: #8dbbe3;
+    font-weight: 600;
+    color: #281d86;
+    bottom: 5%;
+    position: absolute;
+    left: 32.5%;
+    transition: all .1s; }
+    .card__btn:hover {
+      box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+      transform: translateY(-1px);
+      cursor: pointer; }
+    .card__btn:hover {
+      transform: translateY(-3px); }
+
+.pagination {
+  z-index: 9000;
+  position: absolute;
+  top: 90vh;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 1000px; }
+  .pagination__list {
+    list-style: none; }
+  .pagination__item {
+    display: inline-block;
+    width: 5%;
+    height: 10%;
+    background-color: #8dbbe3;
+    border: 0.5px solid #466078;
+    margin-bottom: 5px; }
+    .pagination__item:not(:last-child) {
+      margin-right: 5px; }
+    .pagination__item:hover {
+      cursor: pointer; }
+    .pagination__item:hover, .pagination__item:active {
+      background-color: #5681a6; }
+  .pagination__item:hover .pagination__link {
+    color: white; }
+  .pagination__item:active .pagination__link {
+    color: white; }
+  .pagination__link {
+    text-decoration: none;
+    color: #466078;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%; }
+
+.notification {
+  height: 100vh;
+  width: 100%;
+  background-color: #8dbbe3;
+  position: relative;
+  text-align: center; }
+  .notification__box {
+    position: absolute;
+    top: 30vh;
+    display: inline-block;
+    height: 30vh;
+    width: 100%;
+    left: 0;
+    background-color: #5681a6;
+    padding-top: 10vh; }
+    .notification__box p {
+      font-size: 24px;
+      font-weight: 500;
+      font-style: italic; }
+      .notification__box p span {
+        color: white;
+        font-size: 25px;
+        text-decoration: none; }
+      .notification__box p span:hover {
+        color: #8dbbe3; }
+
+.details {
+  height: 100vh;
+  width: 100%;
+  background-color: #edd38a;
+  color: #080433; }
+  .details__list {
+    background-color: #f0c756;
+    border: 1px solid white;
+    border-radius: 3px;
+    list-style-type: none;
+    margin-top: 50px; }
+  .details__item {
+    font-size: 26px;
+    padding: 20px;
+    height: 85px;
+    border-bottom: 2px dotted white;
+    font-weight: 600; }
+  .details__list1 {
+    background-color: #f7c53b;
+    border: 1px solid white;
+    border-radius: 3px;
+    list-style-type: none;
+    margin-top: 50px; }
+  .details__item1 {
+    font-style: italic;
+    font-size: 22px;
+    padding: 10px 5px;
+    height: 85px;
+    border-bottom: 2px dotted white;
+    overflow-x: auto; }
+  .details p {
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    padding-top: 50px; }
+    .details p span {
+      color: #5681a6;
+      font-size: 25px;
+      text-decoration: none; }
+    .details p span:hover {
+      color: #466078; }
+
+.img-box {
+  margin-top: 50px;
+  border: 1px solid white;
+  border-radius: 3px;
+  height: 597px; }
+  .img-box img {
+    height: 100%;
+    min-width: 100%; }
+
+.row {
+  margin: 0 auto;
+  max-width: 1400px;
+  min-width: 1400px;
+  margin-top: 2%;
+  clear: both;
+  display: table;
+  content: ''; }
+  .row [class^="col-"] {
+    float: left; }
+
+.col-1-of-4 {
+  width: calc((100% - 4*40px) /4);
+  margin-right: 40px; }
+
+.col-1-of-3 {
+  width: calc((100% - 2*40px) /3);
+  margin-right: -2px; }

@@ -1,0 +1,17 @@
+@mixin clearfix {
+    clear: both;
+    display: table;
+    content: '';
+}
+
+@mixin vertical-align {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-align {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

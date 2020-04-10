@@ -1,0 +1,12 @@
+.list-books {
+    margin-top: 25vh;
+    position: absolute;
+    z-index: -1;
+    height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .7), rgba($color-primary-dark, .7)),
+                        url('/img/background.jpeg');
+    background-size: cover;
+    position: fixed;
+    overflow-y: auto;
+}
